@@ -8,10 +8,9 @@ After completing this exercise, you should be able to discuss or answer the foll
   Variables are used to store data to later be retrieved.
 
 - How do you **declare** a variable?
-  You can use the keyword const or let. (var for older browsers)
+  You can use the keyword const or let followed by the name of the variable. (var for older browsers)
 
-- How do you initialize (**assign a value to**) a variable?
-  =
+- # How do you initialize (**assign a value to**) a variable?
 
 - What characters are allowed in variable names?
   Numbers(can't be used as the first character in a variable name), letters, dollar signs, and underscores
