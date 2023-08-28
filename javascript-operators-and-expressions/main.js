@@ -20,7 +20,7 @@ console.log('typeof grade', typeof grade);
 
 const firstName = 'Ross';
 const lastName = 'Brewster';
-const fullName = firstName + lastName;
+const fullName = firstName + ' ' + lastName;
 console.log('Fullname:', fullName);
 console.log('typeof Fullname:', typeof fullName);
 
