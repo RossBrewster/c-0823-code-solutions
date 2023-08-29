@@ -66,6 +66,6 @@ const orderHistory = [
         returnDueDate: '08/04/2020',
       },
     ],
-    total: '',
+    total: '$138.93',
   },
 ];
