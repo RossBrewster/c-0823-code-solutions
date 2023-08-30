@@ -5,12 +5,7 @@
 After completing this exercise, you should be able to discuss or answer the following questions:
 
 - Give 6 examples of comparison operators.
-  <=
-
-  > # =
-  >
-  > !=
-  > <
+  (< , >, <=, >=, ===, !=)
 
 - What data type do comparison expressions evaluate to?
   boolean
