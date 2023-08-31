@@ -107,6 +107,8 @@ function introduceWarnerBro(name) {
       return "We're the Warner brothers!";
     case 'wakko':
       return "We're the Warner brothers!";
+    case 'dot':
+      return "I'm cute~";
     default:
       return 'Goodnight everybody!';
   }
