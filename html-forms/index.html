@@ -14,9 +14,9 @@
           <input id="email" type="email" name="email" />
         </div>
       </div>
-      <label for="why_coding">Why is coding cool?</label>
+      <label for="why-coding">Why is coding cool?</label>
       <div>
-        <select id="why_coding" name="why_coding">
+        <select id="why-coding" name="why_coding">
           <option>select an option.</option>
           <option>Because it's fun.</option>
           <option>Because it's interesting.</option>
@@ -25,13 +25,43 @@
       </div>
       <div>
         <p>Favorite language (choose one)</p>
-        <div>
-          <input type="radio" id="language" name="HTML" value="HTML" />
-          <label for="HTML">HTML</label>
+      </div>
+      <div>
+        <input type="radio" name="language" value="HTML" id="HTML" />
+        <label for="HTML">HTML</label>
 
-          <input type="radio" name="CSS" value="CSS" />
-          <label for="CSS">CSS</label>
+        <input type="radio" name="language" value="CSS" id="CSS" />
+        <label for="CSS">CSS</label>
+
+        <input
+          type="radio"
+          name="language"
+          value="JavaScript"
+          id="JavaScript" />
+        <label for="JavaScript">Javascript</label>
+      </div>
+
+      <div>
+        <div>
+          <p>Would you like to sign up for more information?</p>
         </div>
+        <div>
+          <input type="checkbox" id="sign-up" />
+          <label for="sign-up">Sign me up!</label>
+        </div>
+      </div>
+
+      <div>
+        <div>
+          <label for="comments">Comments</label>
+        </div>
+        <div>
+          <textarea id="comments" cols="30" rows="8"></textarea>
+        </div>
+      </div>
+
+      <div>
+        <input type="submit" value="submit" />
       </div>
     </form>
   </body>
