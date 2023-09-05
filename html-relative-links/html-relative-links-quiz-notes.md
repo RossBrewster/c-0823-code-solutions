@@ -12,6 +12,7 @@ After completing this exercise, you should be able to discuss or answer the foll
   ../../
 - How do you indicate the relative link to the same directory?
   type the name of the file (you are currently in the directory)
+  ...
 
 ## Notes
 
