@@ -19,7 +19,7 @@ After completing this exercise, you should be able to discuss or answer the foll
   checkbox
 
 - Is an HTML `<input>` element a block element or an inline element?
-  inline
+  inline block
 
 ## Notes
 
