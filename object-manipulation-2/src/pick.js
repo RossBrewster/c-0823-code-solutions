@@ -1,10 +1,10 @@
 /* exported pick */
 function pick(source, keys) {
-  const obj = {};
+  const newObj = {};
   for (let i = 0; i < keys.length; i++) {
-    if (keys[i] in source) {
-      obj[keys[i]] = source[keys[i]];
+    if (source.hasOwn(keys[i])) {
+      newObj[keys[i]] = source[keys[i]];
     }
   }
-  return obj;
+  return newObj;
 }
