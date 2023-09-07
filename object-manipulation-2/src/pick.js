@@ -5,6 +5,9 @@ function pick(source, keys) {
     if (Object.hasOwn(source, keys[i])) {
       newObj[keys[i]] = source[keys[i]];
     }
+    if (newObj[keys[i]] === undefined) {
+      delete newObj[keys[i]];
+    }
   }
   return newObj;
 }
