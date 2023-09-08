@@ -13,19 +13,60 @@
 
 .column-half {
   display: flex;
-  flex-basis: 0.5;
+  flex-basis: 50%;
 
   /* gap: 10% */
 }
 
 .icon {
-  height: 100%;
+  width: 100%;
 }
 
 .icon-container {
-  max-height: 50%;
+  max-height: 40%;
 }
 
 .description {
   max-width: 75%;
+}
+
+.hero-description {
+  flex-basis: 90%;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.text {
+  font-family: Karla, sans-serif;
+  font-weight: 400;
+  color: #464646;
+}
+
+.hero-text {
+  font-family: Karla, sans-serif;
+  font-size: 60px;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin-bottom: 0;
+  color: #0e0e0e;
+}
+
+.h-text {
+  font-family: Karla, sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  color: #0e0e0e;
+  text-transform: uppercase;
+}
+
+.learn-more {
+  background-color: white;
+  color: #d14c45;
+  border: solid 2px #d14c45;
+  padding: 8px 32px;
+  margin-top: 30px;
+  font-family: Karla, sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  text-transform: uppercase;
 }
