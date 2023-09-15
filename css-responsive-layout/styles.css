@@ -31,13 +31,13 @@ body {
 }
 
 /* your code 👇 here */
-@media (width >= 576px) {
+@media only screen and (width >= 576px) {
   .col-sm-half {
     flex-basis: 50%;
   }
 }
 
-@media (width >= 768px) {
+@media only screen and (width >= 768px) {
   .col-lg-third {
     flex-basis: calc(100% / 3);
   }
