@@ -22,7 +22,7 @@ const arrJSON = JSON.stringify(arr);
 console.log('arrJSON:', arrJSON);
 console.log('type of arrJSON:', typeof arrJSON);
 
-const strJSON = '{"number-id":54363543,"name":"Harry Potter"}';
+const strJSON = '{"id":54363543,"name":"Harry Potter"}';
 
 console.log('strJSON:', strJSON);
 console.log('type of strJSON:', typeof strJSON);
