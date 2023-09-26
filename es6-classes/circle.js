@@ -2,10 +2,8 @@
 /* exported Circle */
 class Circle extends Shape {
   constructor(radius) {
-    super(radius);
+    super(Math.PI * radius ** 2, 2 * Math.PI * radius);
     this.radius = radius;
-    super.area = Math.PI * radius ** 2;
-    super.perimeter = 2 * Math.PI * radius;
   }
 
   describe() {
