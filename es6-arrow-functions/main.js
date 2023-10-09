@@ -12,7 +12,7 @@ console.log('doubled', doubled);
 
 console.log('\n\nExercise 2');
 const actOnEntries = (obj, action) =>
-  Object.entries(obj).forEach(function (e) {
+  Object.entries(obj).forEach((e) => {
     action(e);
   });
 
