@@ -40,7 +40,7 @@ const cfg1 = v1 ?? 'default-value';
 const cfg2 = v2 ?? 'default-value';
 const cfg3 = v3 ?? 'default-value';
 
-console.log('cfg1:', cfg1, 'cfg2:', `${cfg2}`, 'cfg3:', cfg3);
+console.log('cfg1:', cfg1, 'cfg2:', `'${cfg2}'`, 'cfg3:', cfg3);
 
 /* TODO:
  * Use the shorthand if/else, which is especially useful for variable assignments.
