@@ -10,6 +10,6 @@ const prices1 = prices.map((x) => {
 
 console.log(prices1);
 
-const prices3 = prices.map((x) => '$' + x);
+const prices3 = prices.map((x) => '$' + x.toFixed(2));
 
 console.log(prices3);
