@@ -5,9 +5,9 @@ function App() {
   return (
     <>
       <div>
-        <CustomButton text={'I'} color={'red'} />
-        <CustomButton text={'Know'} color={'green'} />
-        <CustomButton text={'React!'} color={'blue'} />
+        <CustomButton text="I" color={'red'} />
+        <CustomButton text="Know" color={'green'} />
+        <CustomButton text="React!" color={'blue'} />
       </div>
     </>
   );
