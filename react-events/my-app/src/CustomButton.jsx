@@ -1,7 +1,7 @@
 function CustomButton({ color, text, onCustomClick }) {
   return (
     <button
-      onClick={onCustomClick}
+      onClick={() => onCustomClick(text)}
       style={{
         backgroundColor: color,
         color: 'white',
