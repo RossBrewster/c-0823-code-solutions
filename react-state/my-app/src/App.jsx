@@ -1,4 +1,4 @@
-import ToggleButton from './assets/ToggleButton';
+import ToggleButton from './ToggleButton';
 
 function App() {
   return (
