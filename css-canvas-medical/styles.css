@@ -1,0 +1,165 @@
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.row {
+  display: flex;
+  flex-direction: column;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: solid #e9eaed;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: space-between;
+  flex-basis: 50%;
+  margin: 0 5em;
+}
+
+.nav-links > div {
+  align-self: center;
+}
+
+.link {
+  color: #a0a0a0;
+  text-decoration: none;
+}
+
+.logo-blue {
+  width: 15%;
+  margin: 1.2em;
+  margin-left: 5em;
+}
+
+.logo-blue > img {
+  width: 100%;
+}
+
+.contact {
+  color: white;
+  background-color: #284564;
+  padding: 10px 12px;
+  border: none;
+  border-radius: 4px;
+}
+
+.column-full {
+  flex-basis: 100%;
+  display: flex;
+  flex-direction: column;
+
+  /* gap: 40px */
+}
+
+.hero {
+  position: relative;
+  margin: 2em 5em;
+  flex-basis: 100%;
+}
+
+.hero-image {
+  position: absolute;
+  background-image: url('images/hero.jpg');
+  filter: brightness(0.7);
+  opacity: 0.9;
+  background-size: cover;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: -1;
+}
+
+.hero-content {
+  padding: 5em;
+  color: white;
+}
+
+.action {
+  color: white;
+  background-color: #284564;
+  font-size: 1em;
+  padding: 12px 40px;
+  border: none;
+  border-radius: 4px;
+  margin-top: 2em;
+}
+
+.gray {
+  background-color: #fafafa;
+}
+
+.prefer {
+  text-align: center;
+  margin-top: 2em;
+  color: #6e6e6e;
+}
+
+.clinics {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  margin-bottom: 3em;
+  color: #6e6e6e;
+}
+
+.column-split {
+  display: flex;
+  justify-content: space-between;
+  margin: 1em 5em;
+  color: #6e6e6e;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  background-color: #525351;
+  color: white;
+}
+
+.column-quarter {
+  flex-basis: 25%;
+  justify-self: flex-end;
+  margin: 5em 3em;
+}
+
+.column-half {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 50%;
+  margin: 5em;
+}
+
+.column-half > img {
+  width: 30%;
+  margin-bottom: 2em;
+}
+
+p {
+  font-size: 0.8em;
+}
+
+.legal {
+  display: flex;
+  gap: 2em;
+  margin: 2em;
+}
+
+.legal > p {
+  margin: 0;
+}
+
+.avenir {
+  font-family: Avenir, sans-serif;
+}
+
+.tiempo {
+  font-family: 'Tiempos Headline', serif;
+  font-weight: 500;
+}
