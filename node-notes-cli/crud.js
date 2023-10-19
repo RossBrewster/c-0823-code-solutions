@@ -3,17 +3,20 @@ import fs from 'node:fs/promises';
 const fileName = 'data.json';
 const [, , command, id, newNote] = process.argv;
 
-async function readNotes() {
+async function getData() {
   const notes = await fs.readFile(fileName, { encoding: 'utf8' });
-  const parsed = JSON.parse(notes);
-  for (const key in parsed.notes) {
-    console.log(`"${key}": "${parsed.notes[key]}"`);
+  return JSON.parse(notes);
+}
+
+async function readNotes() {
+  const data = await getData();
+  for (const key in data.notes) {
+    console.log(`"${key}": "${data.notes[key]}"`);
   }
 }
 
 async function createNote() {
-  const notes = await fs.readFile(fileName, { encoding: 'utf8' });
-  const data = JSON.parse(notes);
+  const data = await getData();
   data.notes[data.nextId] = process.argv[3];
   data.nextId++;
   const dataJSON = JSON.stringify(data);
@@ -21,8 +24,7 @@ async function createNote() {
 }
 
 async function updateNote() {
-  const notes = await fs.readFile(fileName, { encoding: 'utf8' });
-  const data = JSON.parse(notes);
+  const data = await getData();
   if (id in data.notes) {
     data.notes[id] = newNote;
     const dataJSON = JSON.stringify(data);
@@ -33,8 +35,7 @@ async function updateNote() {
 }
 
 async function deleteNote() {
-  const notes = await fs.readFile(fileName, { encoding: 'utf8' });
-  const data = JSON.parse(notes);
+  const data = await getData();
   if (id in data.notes) {
     delete data.notes[id];
     const dataJSON = JSON.stringify(data);
@@ -47,16 +48,16 @@ async function deleteNote() {
 try {
   switch (command) {
     case 'read':
-      readNotes();
+      await readNotes();
       break;
     case 'create':
-      createNote();
+      await createNote();
       break;
     case 'update':
-      updateNote();
+      await updateNote();
       break;
     case 'delete':
-      deleteNote();
+      await deleteNote();
       break;
     default:
       throw new Error(
