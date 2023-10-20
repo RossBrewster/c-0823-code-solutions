@@ -45,8 +45,7 @@ app.delete('/api/grades/:id', (req, res) => {
     delete grades[req.params.id];
     res.sendStatus(204);
   } else {
-    console.error(`The id does not exist: ${req.params.id}`);
-    res.sendStatus(404);
+    res.status(404).send(`The id does not exist: ${req.params.id}`);
   }
 });
 
