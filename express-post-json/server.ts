@@ -30,7 +30,7 @@ app.post('/api/grades', (req, res) => {
     score: req.body.score,
   };
   grades[grade.id] = grade;
-  res.json(grades);
+  res.json(grade);
 });
 
 app.listen(8080, () => {
