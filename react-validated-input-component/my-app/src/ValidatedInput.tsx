@@ -50,6 +50,7 @@ export function ValidatedInput() {
           Password
           <input
             type="password"
+            value={password}
             onChange={(e) => {
               setPassword(e.target.value);
             }}
