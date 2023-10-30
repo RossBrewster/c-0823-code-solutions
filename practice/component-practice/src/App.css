@@ -19,16 +19,17 @@
 }
 
 h1 {
-  color: black;
+  color: white;
   z-index: 1;
 }
 
 #transparent-button {
+  color: white;
   background-color: transparent;
-  border: 2px solid black;
+  border: 2px solid white;
 }
 
 #transparent-button:hover {
-  background-color: black;
-  color: white;
+  background-color: white;
+  color: black;
 }
