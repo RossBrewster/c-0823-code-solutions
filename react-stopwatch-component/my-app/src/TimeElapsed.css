@@ -1,0 +1,11 @@
+.time {
+  border: solid black 2px;
+  font-size: 50px;
+  width: 10rem;
+  height: 10rem;
+  border-radius: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem;
+}
