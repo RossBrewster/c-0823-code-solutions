@@ -1,0 +1,31 @@
+form {
+  background-color: antiquewhite;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  border-radius: 25px;
+}
+
+button {
+  width: 33.3%;
+  margin: 0 auto;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+label {
+  margin: 2rem;
+  margin-bottom: 0;
+}
+
+input {
+  background-color: lightblue;
+  border: gray solid 1px;
+  height: 1.5rem;
+  border-radius: 8px;
+  color: black;
+  font-size: 1rem;
+  padding-left: 0.5rem;
+  margin-left: 0.5rem;
+}
