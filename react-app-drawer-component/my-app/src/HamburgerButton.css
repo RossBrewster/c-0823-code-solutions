@@ -1,0 +1,17 @@
+.IoIosMenu {
+  font-size: 3rem;
+  cursor: pointer;
+  margin-left: 1rem;
+  margin-top: 0.5rem;
+}
+
+h2 {
+  margin-left: 1.25rem;
+  margin-top: 0.5rem;
+}
+
+.menu-button {
+  cursor: pointer;
+  position: absolute;
+  z-index: 2;
+}
