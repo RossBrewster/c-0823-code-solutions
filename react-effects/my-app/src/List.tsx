@@ -26,7 +26,7 @@ export function List() {
       }
     };
     fetchData();
-  }, [setIsLoading]);
+  }, []);
 
   if (isLoading) {
     return <div>Loading...</div>;
