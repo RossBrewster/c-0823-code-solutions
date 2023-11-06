@@ -1,0 +1,23 @@
+.row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.column-half {
+}
+
+.column-full {
+  display: flex;
+  max-width: 800px;
+  width:100%;
+}
+
+.image {
+  width: 100%;
+  height: 100%;
+}
+
+.title-row {
+  display: flex;
+  justify-content: space-between;
+}
