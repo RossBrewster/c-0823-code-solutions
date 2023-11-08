@@ -14,8 +14,10 @@ export function authMiddleware(
     if (!authHeader) throw new ClientError(401, 'Authentication required');
     const token = authHeader.split('Bearer ')[1];
     if (!token) throw new ClientError(401, 'Authentication required');
-    const payload = jwt.verify(token, process.env.TOKEN_SECRET as string);
-    (req as any).user = payload;
+    if (process.env.TOKEN_SECRET === undefined)
+      throw new Error('Token secret is undefined');
+    const payload = jwt.verify(token, process.env.TOKEN_SECRET);
+    req.user = payload as Request['user'];
     next();
   } catch (error) {
     if (error instanceof jwt.JsonWebTokenError) {
