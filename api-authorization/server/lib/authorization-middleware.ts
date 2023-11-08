@@ -9,23 +9,15 @@ export function authMiddleware(
   next: NextFunction
 ) {
   /* your code here */
-  try {
-    const authHeader = req.get('Authorization');
-    if (!authHeader) throw new ClientError(401, 'Authentication required');
-    const token = authHeader.split('Bearer ')[1];
-    if (!token) throw new ClientError(401, 'Authentication required');
-    if (process.env.TOKEN_SECRET === undefined)
-      throw new Error('Token secret is undefined');
-    const payload = jwt.verify(token, process.env.TOKEN_SECRET);
-    req.user = payload as Request['user'];
-    next();
-  } catch (error) {
-    if (error instanceof jwt.JsonWebTokenError) {
-      next(new ClientError(401, 'Invalid token'));
-    } else {
-      next(error);
-    }
-  }
+  const authHeader = req.get('Authorization');
+  if (!authHeader) throw new ClientError(401, 'Authentication required');
+  const token = authHeader.split('Bearer ')[1];
+  if (!token) throw new ClientError(401, 'Authentication required');
+  if (process.env.TOKEN_SECRET === undefined)
+    throw new Error('Token secret is undefined');
+  const payload = jwt.verify(token, process.env.TOKEN_SECRET);
+  req.user = payload as Request['user'];
+  next();
 }
 
 /*
