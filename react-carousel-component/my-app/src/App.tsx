@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import './App.css';
 import { Carousel } from './Carousel';
 
@@ -23,6 +23,19 @@ const images: { url: string; id: number }[] = [
 
 function App() {
   const [viewing, setViewing] = useState(0);
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      if (viewing === images.length - 1) {
+        setViewing(0);
+      } else {
+        setViewing(viewing + 1);
+      }
+    }, 1500);
+    return () => {
+      clearTimeout(timer);
+    };
+  }, [viewing]);
 
   function handleNextClick() {
     if (viewing === images.length - 1) {
