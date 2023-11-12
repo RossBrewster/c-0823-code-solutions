@@ -1,0 +1,37 @@
+.wrapper {
+  width: 50vw;
+  height: 50vh;
+  border: solid black 2px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.input {
+  width: 99%;
+  height: 15%;
+  border: solid black 2px;
+  margin: 0.1rem;
+  border-radius: 8px;
+}
+
+.conversation {
+  width: 99%;
+  height: 84%;
+  border: solid black 2px;
+  margin: 0.1rem;
+  border-radius: 8px;
+}
+
+.send {
+  background-color: lightgreen;
+}
+
+.form-input {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: stretch;
+}

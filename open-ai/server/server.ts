@@ -13,6 +13,7 @@ const app = Express();
 app.use(Express.json());
 
 app.post('/generate-text', async (req, res) => {
+  console.log('received');
   try {
     const prompt = req.body.prompt as string;
 
